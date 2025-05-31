@@ -1,0 +1,67 @@
+.presentation {
+    flex-grow: 1;
+    color: var(--clr-text);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin: 2em;
+}
+
+.presentation main {
+    align-self: center;
+}
+
+.presentation aside {
+    display: flex;
+    align-items: center;
+}
+
+.presentation main p {
+    margin-bottom: 0;
+}
+
+.presentation header {
+    padding-bottom: 2em;
+}
+
+.presentation header p {
+    padding: 0;
+    margin-left: 0.2em;
+}
+
+.presentation header h1 {
+    line-height: 1.1;
+    margin: 0.4rem 0;
+}
+
+.presentation header h2 {
+    font-size: 1.8em;
+    color: var(--clr-magic-method);
+}
+
+.presentation header h2::before {
+    display: inline-block;
+    content: '>';
+    padding-right: 1em;
+}
+
+.presentation .comment {
+    color: var(--clr-comment);
+}
+
+.presentation .clr-string {
+    color: var(--clr-string);
+}
+
+.presentation .clr-string:hover {
+    text-decoration: underline;
+}
+
+.presentation .img-frame {
+    width: 20em;
+    height: auto;
+    margin-right: 3em;
+    border: 3px solid var(--clr-string);
+    padding: 0.5em;
+}

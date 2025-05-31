@@ -1,0 +1,14 @@
+button {
+    background-color: var(--clr-border-layout);
+    border-radius: 0.5em;
+    border: 1px solid var(--clr-border-layout);
+    padding: 0.5em 0.7em;
+    color: var(--clr-text);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--clr-text);
+    color: var(--clr-border-layout);
+    font-weight: bold;
+}

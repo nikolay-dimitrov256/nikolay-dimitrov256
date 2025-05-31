@@ -1,0 +1,13 @@
+:root {
+    --clr-body-bgrd: #2b2d30;
+    --clr-site-bgrd: #1e1f22;
+    --clr-border-layout: #1E2D3D;
+    --clr-keyword: #ce8d6b;
+    --clr-text: #bcbec4;
+    --clr-decorator: #aba053;
+    --clr-string: #68a770;
+    --clr-function: #548af7;
+    --clr-magic-method: #a90479;
+    --clr-comment: #777b82;
+    --clr-nav-a-hover: rgb(255, 255, 255, 0.1);
+}

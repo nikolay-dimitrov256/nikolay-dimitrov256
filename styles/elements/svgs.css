@@ -1,0 +1,12 @@
+.caret-right {
+    width: 0.5em;
+}
+
+.caret-down {
+    width: 0.6em;
+}
+
+.caret-right,
+.caret-down {
+    fill: var(--clr-text);
+}
