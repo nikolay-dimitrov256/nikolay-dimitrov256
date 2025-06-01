@@ -1,4 +1,4 @@
-button {
+.button {
     background-color: var(--clr-border-layout);
     border-radius: 0.5em;
     border: 1px solid var(--clr-border-layout);
@@ -7,7 +7,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: var(--clr-text);
     color: var(--clr-border-layout);
     font-weight: bold;

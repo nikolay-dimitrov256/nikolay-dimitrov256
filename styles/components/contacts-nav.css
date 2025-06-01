@@ -26,6 +26,7 @@
 
 .contacts-nav > ul label {
     background-color: var(--clr-nav-a-hover);
+    transition: background-color 0.3s ease-in-out;
 }
 
 .contacts-nav > ul label:hover,

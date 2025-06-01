@@ -89,18 +89,18 @@
                     <p>contact_me</p>
 
                     <section class="contact-main">
-                        <form id="contact-form" method="post">
+                        <form action="https://formspree.io/f/xrbkzvlv" id="contact-form" method="post">
                             <p>
                                 <label for="name">_name</label>
-                                <input type="text" id="name" class="listen" placeholder="John Doe">
+                                <input type="text" name="name" id="name" class="listen" placeholder="John Doe" required>
                             </p>
                             <p>
                                 <label for="email">_email</label>
-                                <input type="email" id="email" class="listen" placeholder="johndoe@johndoe.com">
+                                <input type="email" name="email" id="email" class="listen" placeholder="johndoe@johndoe.com" required>
                             </p>
                             <p>
                                 <label for="message">_message</label>
-                                <textarea name="message" id="message" class="listen multiline" placeholder="Say something..."></textarea>
+                                <textarea name="message" id="message" class="listen multiline" placeholder="Say something..." required></textarea>
                             </p>
                             
                             <p class="buttons">
@@ -155,6 +155,17 @@
 
         </footer>
 
+    </div>
+
+    <div class="hidden-elements" style="display: none;">
+        <div class="thank-you">
+            <h2>Thank you!</h2>
+            <p>Your message has been sent.</p>
+            <p>You will receive an answer soon.</p>
+            <p class="buttons">
+                <button onclick="location.reload()">send_new_message</button>
+            </p>
+        </div>
     </div>
     
     <script src="js/contact.js"></script>

@@ -29,7 +29,8 @@
     padding: 0.3em 1em;
 }
 
-.about-nav a:hover {
+.about-nav a:hover,
+.about-nav li.selected a {
     background-color: var(--clr-nav-a-hover);
 }
 
@@ -62,7 +63,7 @@
     flex-direction: column;
 }
 
-.about main .about-content {
+.about main #about-content {
     flex-grow: 1;
     max-width: 33em;
     border-right: 1px solid var(--clr-border-layout);

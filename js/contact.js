@@ -1,6 +1,8 @@
 window.addEventListener('load', (e) => {
     const fields = document.querySelectorAll('#contact-form .listen');
 
+    initForm();
+
     fields.forEach(field => field.addEventListener('input', (e) => fillField(e, field)));
 });
 
@@ -32,4 +34,31 @@ function getContent(field) {
     } else {
         return field.value;
     }
+}
+
+function initForm() {
+    const form = document.getElementById('contact-form');
+    const mainElement = document.querySelector('.contact-main');
+    const thankYouElement = document.querySelector('.hidden-elements .thank-you');
+    const hiddenDivElement = document.querySelector('.hidden-elements');
+
+    form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const response = await fetch(
+            form.action,
+            {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            }
+        );
+
+        if (response.ok) {
+            hiddenDivElement.append(form);
+            mainElement.prepend(thankYouElement);
+        } else {
+            alert('Something went wrong. Please try again.')
+        }
+    })
 }

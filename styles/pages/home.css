@@ -65,3 +65,9 @@
     border: 3px solid var(--clr-string);
     padding: 0.5em;
 }
+
+@media (max-width: 991px) {
+    .presentation aside {
+        display: none;
+    }
+}

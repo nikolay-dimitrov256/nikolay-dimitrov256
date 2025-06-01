@@ -14,3 +14,8 @@ function fillContent(e, aElement) {
     targetPElement.textContent = contentPElement.textContent;
     labelPElement.textContent = contentPElement.id;
 }
+
+function fillContent(e, aElement) {
+    e.preventDefault;
+    const targetDivElement = document.getElementById('about-content')
+}

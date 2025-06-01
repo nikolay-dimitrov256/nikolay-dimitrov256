@@ -48,3 +48,11 @@ p {
 .string {
     color: var(--clr-string);
 }
+
+.comment {
+    color: var(--clr-comment);
+}
+
+.function {
+    color: var(--clr-function);
+}
