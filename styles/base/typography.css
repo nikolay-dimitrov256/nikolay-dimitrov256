@@ -56,3 +56,7 @@ p {
 .function {
     color: var(--clr-function);
 }
+
+a.string:hover {
+    text-decoration: underline;
+}
