@@ -1,5 +1,5 @@
 .site-header {
-    display: flex;
+    display: block;
     border-bottom: 1px solid var(--clr-border-layout);
     position: relative;
     z-index: 10;
@@ -25,4 +25,14 @@
 
 .site-header p {
     margin: 0;
+}
+
+@media (min-width: 800px) {
+    .site-header {
+        display: flex;
+    }
+
+    .site-header .site-title a {
+        border-bottom: none;
+    }
 }
